@@ -1,0 +1,16 @@
+.mainNav {
+    height: 60px;
+    padding: 20px;
+    background-color: rgb(245, 251, 251);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navRightSide {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

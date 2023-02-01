@@ -1,0 +1,99 @@
+.secondNav {
+    width: 90%;
+    margin: 20px auto;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.titleCollectionLayout {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+@media (max-width: 767px) {
+    .secondNav {
+        width: 90%;
+        margin: 20px auto;
+        min-height: 40vh;
+    }
+
+    .titleCollectionLayout {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px
+    }
+}
+
+.secondNav li {
+    margin: 10px 20px;
+}
+
+
+
+
+.nazarethMainPic {
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1670600483806-95e5b15aaa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+}
+
+.centerMainPic {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/9129012/pexels-photo-9129012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+}
+
+.nothMainPic {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+}
+
+.southMainPic {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/6468417/pexels-photo-6468417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+
+}
+
+.southMainPic:hover,
+.nothMainPic:hover,
+.nazarethMainPic:hover,
+.centerMainPic:hover {
+    scale: 1.1;
+}
+
+.Locationwrapper {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40, 39, 39, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.Locationwrapper:hover {
+    background-color: rgba(40, 39, 39, 0.1);
+
+}

@@ -1,0 +1,202 @@
+/* .hero {
+    width: 95%;
+    margin: 20px auto;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.homePageMeals {
+    height: 100%;
+    background-image: url("/public/dinner.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.homePageCollections {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.homePageAttractions {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/9129012/pexels-photo-9129012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .titleCollectionLayout {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px
+    }
+} */
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    position: relative;
+    overflow: hidden;
+    /* background-position: bottom; */
+    /* box-shadow: 0 8px 16px 12px rgb(43, 42, 42), 0 12px 24px 0 rgba(43, 42, 42); */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+
+.img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 600px) {
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* vertical-align: middle; */
+    }
+}
+
+.content {
+    position: absolute;
+    /* top: 10rem; */
+    /* right:10rem; */
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, .2);
+    box-shadow:
+        rgb(0 0 0 / 6%) 0px 4px 8px, rgb(35 41 54 / 14%) 0px 12px 32px, rgb(35 41 54 / 14%) 0px 12px 32px, rgb(35 41 54 / 14%) 0px 12px 32px;
+    animation: slide-up 1s ease .5;
+    /* animation-fill-mode: forwards; */
+    /* visibility:hidden; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 740px) {
+    .content {
+        width: 90%;
+        /* top: 5rem; */
+        /* align-self: center; */
+    }
+
+    .hero {
+        max-height: 50vh;
+        min-height: 50vh;
+    }
+}
+
+.content>* {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.getStarted {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    transition: all 0.15s ease-in-out 0s;
+    border-radius: 30px;
+    padding: 5px 25px;
+    border: none;
+    cursor: pointer;
+    z-index: 99
+}
+
+.getStarted:hover {
+    background-color: rgb(237, 240, 240);
+}
+
+.current {
+    opacity: 1;
+    transform: translateX(0);
+    min-height: 50vh;
+}
+
+.current .content {
+    opacity: 1;
+
+}
+
+.arrow {
+    /* border: 2px solid white;
+    background:transparent; */
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+
+.next {
+    top: 35%;
+    right: 1.5rem;
+}
+
+.prev {
+    top: 35%;
+    left: 1.5rem;
+}
+
+@media (max-width: 740px) {
+    .next {
+        top: 20%;
+        right: 1.5rem;
+    }
+
+    .prev {
+        top: 20%;
+        left: 1.5rem;
+    }
+}
