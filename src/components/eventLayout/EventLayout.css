@@ -82,3 +82,17 @@
 .birthday:hover {
     scale: 1.05
 }
+
+@media(max-width:600px) {
+    .engagement {
+        min-height: 10vh;
+    }
+
+    .proposal {
+        min-height: 10vh;
+    }
+
+    .birthday {
+        min-height: 10vh;
+    }
+}
