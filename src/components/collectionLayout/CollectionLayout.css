@@ -1,7 +1,8 @@
 .secondNav {
     width: 90%;
     margin: 20px auto;
-    height: 50vh;
+    height: fit-content;
+    min-height: 30vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
@@ -20,7 +21,7 @@
     .secondNav {
         width: 90%;
         margin: 20px auto;
-        min-height: 40vh;
+        min-height: 20vh;
     }
 
     .titleCollectionLayout {
@@ -40,6 +41,7 @@
 
 .nazarethMainPic {
     height: 100%;
+    min-height: 15vh;
     background-image: url("https://images.unsplash.com/photo-1670600483806-95e5b15aaa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,9 +49,10 @@
     transition: .4s;
 }
 
-.centerMainPic {
+.HaifaMainPic {
     height: 100%;
-    background-image: url("https://images.pexels.com/photos/9129012/pexels-photo-9129012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    min-height: 15vh;
+    background-image: url("https://images.pexels.com/photos/7195779/pexels-photo-7195779.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,6 +61,7 @@
 
 .nothMainPic {
     height: 100%;
+    min-height: 15vh;
     background-image: url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,9 +69,10 @@
     transition: .4s;
 }
 
-.southMainPic {
+.tiberiasMainPic {
     height: 100%;
-    background-image: url("https://images.pexels.com/photos/6468417/pexels-photo-6468417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    min-height: 15vh;
+    background-image: url("https://images.pexels.com/photos/2102619/pexels-photo-2102619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -75,10 +80,10 @@
 
 }
 
-.southMainPic:hover,
+.HaifaMainPic:hover,
 .nothMainPic:hover,
 .nazarethMainPic:hover,
-.centerMainPic:hover {
+.tiberiasMainPic:hover {
     scale: 1.1;
 }
 

@@ -17,16 +17,16 @@ export default function CollectionLayout() {
         </div>
         </Link>
         <Link to="/collections/center" style={{textDecoration:"none"}}>
-        <div className="centerMainPic">
+        <div className="HaifaMainPic">
           <div className="Locationwrapper">
-            מרכז
+            חיפה
             </div>
         </div>
         </Link>
         <Link to="/collections/south" style={{textDecoration:"none"}}>
-        <div className="southMainPic">
+        <div className="tiberiasMainPic">
         <div className="Locationwrapper">
-            דרום
+            טבריה
         </div>
         </div>
         </Link>

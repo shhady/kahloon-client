@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Hero from "../components/Hero"
-import MealLayout from "../components/mealLayout/MealLayout"
+import Meals from "../components/Meals"
 import CollectionLayout from "../components/collectionLayout/CollectionLayout"
 import AttractionLayout from "../components/attractionLayout/AttractionLayout"
 import EventLayout from "../components/eventLayout/EventLayout"
@@ -10,8 +10,8 @@ export default function Home() {
     <>
     <Hero /> 
     <EventLayout/>
+    <Meals />
     <CollectionLayout />
-    <MealLayout />
     <AttractionLayout />
     </>
   )
